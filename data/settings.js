@@ -1,7 +1,7 @@
 module.exports = {
     uiPort: process.env.PORT || 1880,
+    uiHost: "0.0.0.0",
 
-    // Solo el editor protegido
     adminAuth: {
         type: "credentials",
         users: [{
@@ -11,7 +11,6 @@ module.exports = {
         }]
     },
 
-    // Dashboard sin contraseña
     httpNodeAuth: null,
     httpStaticAuth: null,
 
