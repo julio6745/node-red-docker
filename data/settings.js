@@ -1,8 +1,7 @@
 module.exports = {
-    // Puerto donde escucha Node-RED (Railway usa la variable PORT)
     uiPort: process.env.PORT || 1880,
 
-    // Autenticación del editor de Node-RED
+    // Solo el editor protegido
     adminAuth: {
         type: "credentials",
         users: [{
@@ -12,19 +11,11 @@ module.exports = {
         }]
     },
 
-    // Autenticación para los endpoints HTTP (incluye /ui)
-    httpNodeAuth: {
-        user: "julio",
-        pass: "julio"
-    },
+    // Dashboard sin contraseña
+    httpNodeAuth: null,
+    httpStaticAuth: null,
 
-    // Autenticación para archivos estáticos (si los hubiera)
-    httpStaticAuth: {
-        user: "julio",
-        pass: "julio"
-    },
-
-    // Contexto global (puedes añadir variables aquí si las necesitas)
     functionGlobalContext: {}
 };
+
 
