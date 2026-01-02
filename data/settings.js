@@ -1,27 +1,14 @@
 module.exports = {
     uiPort: process.env.PORT || 1880,
+    uiHost: "0.0.0.0",
+
     adminAuth: null,
     httpNodeAuth: null,
     httpStaticAuth: null,
+
+    editorTheme: {
+        editorPath: "/julio"
+    },
+
     functionGlobalContext: {}
 };
-editorTheme: {
-    page: {
-        title: "Node-RED",
-        favicon: "favicon.ico"
-    },
-    header: {
-        title: "Node-RED",
-        image: null
-    },
-    deployButton: {
-        type: "default"
-    },
-    menu: { },
-    login: { },
-    palette: { },
-    projects: { },
-    codeEditor: { },
-    tours: { },
-    editorPath: "/julio"
-}
