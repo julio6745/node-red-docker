@@ -6,6 +6,10 @@ module.exports = {
     httpNodeAuth: null,
     httpStaticAuth: null,
 
+    // Sobrescribe la raíz con un directorio vacío
+    httpStatic: 'empty',
+
+    // Editor oculto
     editorTheme: {
         editorPath: "/julio"
     },
