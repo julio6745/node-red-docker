@@ -17,7 +17,5 @@ module.exports = {
     functionGlobalContext: {}
 };
 
-functionGlobalContext: {
-    fs: require("fs")
-};
+
 
